@@ -10,6 +10,20 @@ This document contains instructions for setting up various software applications
 
 ### 2. Visual Paradigm Community Edition
 
+http://www.visual-paradigm.com/download/community.jsp
+
+1. Select the InstallFree tar file under More Options.
+2. Installation instructions from here.
+3. Decompress the downloaded .tar.gz file into a directory: tar -zxf %INSTALL-FREE-FILE.tar.gz% -C %DESTINATION-FOLDER%
+4. This creates a subdirectory named "Visual Paradigm 12.0" where 12.0 is the version number. That's it. To start Visual Paradigm, execute Visual Paradigm 12.0\Visual Paradigm.
+5. Get activation code , input activation code and start.
+
 
 ### 3. StarUML
 
+http://staruml.io/download
+
+1. Go to link, click on the 64-bit Ubuntu download. 
+2. After the download is done, click on the .deb file which is downloaded.
+3. It will get installed through the Ubuntu Software Center. 
+4. You can then access it through the search bar.
