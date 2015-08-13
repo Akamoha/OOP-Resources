@@ -36,6 +36,8 @@ This document contains instructions for setting up various software applications
 13. Now you are ready to develop Java programs using Java SE 7 development kit.
 14. There are a whole bunch of useful development tools in the '/usr/local/java/jdk1.8.0_51/bin' folder. You can make these tools available to yourself by logging in as administrator and completing the instructions given in step#6 for each of the required tools. 
 
+For more detailed and graphical installation instructions, visit http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux
+
 ### 2. Greenfoot
 1. Visit http://www.greenfoot.org/download and click on the link for Ubuntu.
 2. When this is done, navigate to your Downloads directory; you will find a file named "greenfoot-242.deb".
