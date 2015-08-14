@@ -45,11 +45,11 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 4. Once it's done, the installation is complete and you can start using Greenfoot.
 
 ### 3. Visual Paradigm Community Edition
-1. Visit http://www.visual-paradigm.com/download/community.jsp 
-2. Select the InstallFree tar file under More Options.
-3. Decompress the downloaded .tar.gz file into a directory: tar -zxf %INSTALL-FREE-FILE.tar.gz% -C %DESTINATION-FOLDER%
-4. This creates a subdirectory named "Visual Paradigm 12.0" where 12.0 is the version number. That's it. To start Visual Paradigm, execute Visual Paradigm 12.0\Visual Paradigm.
-5. Get activation code, input activation code and start.
+1. Visit [http://www.visual-paradigm.com/download/community.jsp?platform=linux](http://www.visual-paradigm.com/download/community.jsp?platform=linux) 
+2. Select the InstallFree tar file under More Options and download the .tar.gz file.
+3. Extract the downloaded .tar.gz file into a folder named "Visual Paradigm" in the Desktop (using Ubuntu's Archive Manager).
+4. This creates a subdirectory named "Visual Paradigm 12.0" where 12.0 is the version number. That's it. To start Visual Paradigm, execute /Visual Paradigm 12.0/Visual Paradigm (click on the file in the folder)
+5. To get activation code, enter a valid email id and get the input activation code in email. Use that to activate Visual Paradigm. ![image](https://cloud.githubusercontent.com/assets/5674080/9276299/949221d2-42c0-11e5-869c-72eb4d7d1c9f.png)
 
 ### 4. StarUML
 1. Visit http://staruml.io/download and click on the 64-bit Ubuntu download. 
