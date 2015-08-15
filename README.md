@@ -56,3 +56,11 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 2. After the download is done, click on the .deb file which is downloaded.
 3. It will get installed through the Ubuntu Software Center. 
 4. You can then access it through the search bar.
+
+### 5. Git
+1. Download and install Git from http://git-scm.com/download/linux. Find the command pertaining to your ditribution. Linux Mint users follow the same instructions as Ubuntu.
+
+    NOTE: You may need superuser privileges to install Git. Prefix `sudo` before the actual command. For eg, for Ubuntu users -
+    `sudo apt-get install git`.
+
+2. Follow instructions at https://help.github.com/articles/set-up-git/#platform-linux to configure Git.
