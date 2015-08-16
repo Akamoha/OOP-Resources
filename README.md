@@ -58,9 +58,25 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 4. You can then access it through the search bar.
 
 ### 5. Git
-1. Download and install Git from http://git-scm.com/download/linux. Find the command pertaining to your ditribution. Linux Mint users follow the same instructions as Ubuntu.
-
-    NOTE: You may need superuser privileges to install Git. Prefix `sudo` before the actual command. For eg, for Ubuntu users -
+1. Download and install Git from http://git-scm.com/download/linux. Find the command pertaining to your ditribution. Linux Mint users follow the same instructions as Ubuntu.  
+    NOTE: You may need superuser privileges to install Git. Prefix `sudo` before the actual command. For eg, for Ubuntu users -  
     `sudo apt-get install git`.
-
 2. Follow instructions at https://help.github.com/articles/set-up-git/#platform-linux to configure Git.
+
+### 6. Maven
+1. Go to http://maven.apache.org/download.cgi to download the latest version of Maven. Download either the *Binary tar.gz archive* or *Binary zip archive* from under the *Files* subheading.
+2. Extract the archive using *Archive Manager* or any one of the following commands -  
+    `unzip apache-maven-3.3.3-bin.zip` or `tar xzvf apache-maven-3.3.3-bin.tar.gz` (for Maven 3.3.3)
+3. Now open up the file `.profile` in your home directory for editing -  
+    `sudo vi ~/.profile`
+4. Append the following line to add the *bin* directory of your Maven folder to the *PATH* environment variable  
+    `PATH=$PATH:/path/to/apache-maven-3.3.3/bin`
+5. Logout of your user session and login again to reflect the changes. Enter `mvn --version` to see if Maven has been installed correctly. Your output should look similar to
+```
+    Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T17:27:37+05:30)  
+    Maven home: /path/to/apache-maven-3.3.3  
+    Java version: 1.8.0_51, vendor: Oracle Corporation  
+    Java home: /usr/lib/jvm/java-8-oracle/jre  
+    Default locale: en_IN, platform encoding: UTF-8  
+    OS name: "linux", version: "3.13.0-37-generic", arch: "amd64", family: "unix"
+```
