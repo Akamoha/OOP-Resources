@@ -7,9 +7,11 @@ This document contains instructions for setting up various software applications
 3. Right click on the zip file and select extract here option. A new sub-directory named 'jdk1.8.0_51' shall be created in ~/Downloads/ directory.
 4. Open command terminal and login as root using the command `sudo su`. You need to provide the administrator's password to login as superuser.
 5. Move the 'jdk1.8.0_51' directory to a system location.
+
     `mkdir /usr/local/java`  
     `mv jdk1.8.0_51 /usr/local/java/`
 6. Create system-wide links to common Java commands
+
     `update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_51/bin/java" 1`
     `update-alternatives --set java /usr/local/java/jdk1.8.0_51/bin/java`
     `update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_51/bin/javac" 1`
@@ -17,11 +19,14 @@ This document contains instructions for setting up various software applications
     `update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.8.0_51/bin/javaws" 1`
     `update-alternatives --set javaws /usr/local/java/jdk1.8.0_51/bin/javaws`
 7. Give up administrator's privileges.
+
      `exit`
 8. Open your profile settings file.
+
      `cd ~`
       `gedit .profile`
 9. At the end of the '.profile' file create a few blank lines and copy-paste the following lines
+
      `JAVA_HOME=/usr/local/java/jdk1.8.0_51`
       `JRE_HOME=$JAVA_HOME/jre`
       `PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin`
@@ -31,8 +36,10 @@ This document contains instructions for setting up various software applications
 10. Save and close the '.profile' file.
 11. In the terminal, type `. .profile` to reload your bash shell profile.
 12. Check the java version with `java -version` command. You should see version printed on terminal.
-     `Java(TM) SE Runtime Environment (build 1.8.0_51-b16)`
-     `Java HotSpot(TM) 64-Bit Server VM (build 25.51-b03, mixed mode)`
+```
+Java(TM) SE Runtime Environment (build 1.8.0_51-b16)
+Java HotSpot(TM) 64-Bit Server VM (build 25.51-b03, mixed mode)
+```
 13. Now you are ready to develop Java programs using Java SE 7 development kit.
 14. There are a whole bunch of useful development tools in the '/usr/local/java/jdk1.8.0_51/bin' folder. You can make these tools available to yourself by logging in as administrator and completing the instructions given in step#6 for each of the required tools.
 
@@ -104,3 +111,22 @@ The App Inventor website provides detailed instructions on how to download and i
 
 1. Visit http://appinventor.mit.edu/explore/content/linux.html
 2. Follow the set of 5 instructions given under the heading "For systems that can install Debian packages"
+
+### 11. Mozilla Firefox Add-ons
+Mozilla Firefox should already be installed on your systems. Follow these steps to install the required add-ons for it:
+
+1. Firebug: Visit https://addons.mozilla.org/en-US/firefox/addon/firebug/ and click the "Add to Firefox" button.
+2. Web Developer: Visit https://addons.mozilla.org/en-us/firefox/addon/web-developer/ and click the "Add to Firefox" button.
+3. RESTClient: Visit https://addons.mozilla.org/en-US/firefox/addon/restclient/ and click the "Add to Firefox" button.
+
+### 12. Eclipse IDE
+1. Visit https://eclipse.org/downloads/ and download the 64 bit or 32 bit version of "Eclipse IDE for Java EE Developers", depending on your system. This is a 268MB file so it'd be better if you downloaded it from DC instead.
+2. Extract the Eclipse installation tarball into your home directory:
+
+`cd`
+`tar -xzvf <path/to/tar-file>`
+
+3. Increase the memory for the Eclipse installation by modifying the ~/eclipse/eclipse.ini file: Change the -Xmx setting (line 20) to be at least 1G (i.e. make it -Xmx1024m). Also change the -XX:MaxPermSize (line 18) to at most 512m.
+4. Run Eclipse:
+
+`~/eclipse/eclipse`
