@@ -8,38 +8,44 @@ This document contains instructions for setting up various software applications
 4. Open command terminal and login as root using the command `sudo su`. You need to provide the administrator's password to login as superuser.
 5. Move the 'jdk1.8.0_51' directory to a system location.
 
-    `mkdir /usr/local/java`  
-    `mv jdk1.8.0_51 /usr/local/java/`
+    ```
+    mkdir /usr/local/java  
+    mv jdk1.8.0_51 /usr/local/java/
+    ```
 6. Create system-wide links to common Java commands
 
-    `update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_51/bin/java" 1`
-    `update-alternatives --set java /usr/local/java/jdk1.8.0_51/bin/java`
-    `update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_51/bin/javac" 1`
-    `update-alternatives --set javac /usr/local/java/jdk1.8.0_51/bin/javac`
-    `update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.8.0_51/bin/javaws" 1`
-    `update-alternatives --set javaws /usr/local/java/jdk1.8.0_51/bin/javaws`
+    ```update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_51/bin/java" 1
+    update-alternatives --set java /usr/local/java/jdk1.8.0_51/bin/java
+    update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_51/bin/javac" 1
+    update-alternatives --set javac /usr/local/java/jdk1.8.0_51/bin/javac
+    update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.8.0_51/bin/javaws" 1
+    update-alternatives --set javaws /usr/local/java/jdk1.8.0_51/bin/javaws
+    ```
 7. Give up administrator's privileges.
 
      `exit`
 8. Open your profile settings file.
 
-     `cd ~`
-      `gedit .profile`
+     ```
+     cd ~
+     gedit .profile
+     ```
 9. At the end of the '.profile' file create a few blank lines and copy-paste the following lines
-
-     `JAVA_HOME=/usr/local/java/jdk1.8.0_51`
-      `JRE_HOME=$JAVA_HOME/jre`
-      `PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin`
-      `export JAVA_HOME`
-      `export JRE_HOME`
-      `export PATH`
+     ```
+     JAVA_HOME=/usr/local/java/jdk1.8.0_51
+     JRE_HOME=$JAVA_HOME/jre
+     PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+     export JAVA_HOME
+     export JRE_HOME
+     export PATH
+     ```
 10. Save and close the '.profile' file.
 11. In the terminal, type `. .profile` to reload your bash shell profile.
 12. Check the java version with `java -version` command. You should see version printed on terminal.
-```
-Java(TM) SE Runtime Environment (build 1.8.0_51-b16)
-Java HotSpot(TM) 64-Bit Server VM (build 25.51-b03, mixed mode)
-```
+	```
+	Java(TM) SE Runtime Environment (build 1.8.0_51-b16)
+	Java HotSpot(TM) 64-Bit Server VM (build 25.51-b03, mixed mode)
+	```
 13. Now you are ready to develop Java programs using Java SE 7 development kit.
 14. There are a whole bunch of useful development tools in the '/usr/local/java/jdk1.8.0_51/bin' folder. You can make these tools available to yourself by logging in as administrator and completing the instructions given in step#6 for each of the required tools.
 
@@ -79,14 +85,14 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 4. Append the following line to add the *bin* directory of your Maven folder to the *PATH* environment variable  
     `PATH=$PATH:/path/to/apache-maven-3.3.3/bin`
 5. Logout of your user session and login again to reflect the changes. Enter `mvn --version` to see if Maven has been installed correctly. Your output should look similar to
-```
+	```
     Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T17:27:37+05:30)  
     Maven home: /path/to/apache-maven-3.3.3  
     Java version: 1.8.0_51, vendor: Oracle Corporation  
     Java home: /usr/lib/jvm/java-8-oracle/jre  
     Default locale: en_IN, platform encoding: UTF-8  
     OS name: "linux", version: "3.13.0-37-generic", arch: "amd64", family: "unix"
-```
+	```
 
 ### 7. NodeJS
 Open up the terminal and execute the following command:
@@ -123,10 +129,12 @@ Mozilla Firefox should already be installed on your systems. Follow these steps 
 1. Visit https://eclipse.org/downloads/ and download the 64 bit or 32 bit version of "Eclipse IDE for Java EE Developers", depending on your system. This is a 268MB file so it'd be better if you downloaded it from DC instead.
 2. Extract the Eclipse installation tarball into your home directory:
 
-`cd`
-`tar -xzvf <path/to/tar-file>`
+	```
+	cd
+	tar -xzvf <path/to/tar-file>
+	```
 
 3. Increase the memory for the Eclipse installation by modifying the ~/eclipse/eclipse.ini file: Change the -Xmx setting (line 20) to be at least 1G (i.e. make it -Xmx1024m). Also change the -XX:MaxPermSize (line 18) to at most 512m.
 4. Run Eclipse:
 
-`~/eclipse/eclipse`
+	`~/eclipse/eclipse`
