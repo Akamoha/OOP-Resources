@@ -82,12 +82,12 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 ```
 
 ### 7. NodeJS
-1. Open up the terminal and execute the following command:
+Open up the terminal and execute the following command:
 
 `sudo apt-get install nodejs`
 
 ### 8. NodeJS Package Manager (npm)
-1. Open up the terminal and execute the following command:
+Open up the terminal and execute the following command:
 
 `sudo apt-get install npm`
 
@@ -101,5 +101,6 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 
 ### 10. App Inventor
 The App Inventor website provides detailed instructions on how to download and install the software.
+
 1. Visit http://appinventor.mit.edu/explore/content/linux.html
 2. Follow the set of 5 instructions given under the heading "For systems that can install Debian packages"
