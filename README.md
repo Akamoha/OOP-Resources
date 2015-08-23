@@ -1,3 +1,4 @@
+Video giving details about the deliverables to be submitted, work division, project timeline and general advice for the CS F213 (Object Oriented Programming) final project: https://www.youtube.com/watch?v=zCihy1nZ7Io
 This document contains instructions for setting up various software applications you would need in the OOP course.
 
 ---------------------------------
