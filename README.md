@@ -76,14 +76,15 @@ For more detailed and graphical installation instructions, visit http://www.wiki
 2. Follow instructions at https://help.github.com/articles/set-up-git/#platform-linux to configure Git.
 
 ### 6. Maven
-1. Go to http://maven.apache.org/download.cgi to download the latest version of Maven. Download either the *Binary tar.gz archive* or *Binary zip archive* from under the *Files* subheading.
-2. Extract the archive using *Archive Manager* or any one of the following commands -  
+  * As a stand alone application  
+    1. Go to http://maven.apache.org/download.cgi to download the latest version of Maven. Download either the *Binary tar.gz archive* or *Binary zip archive* from under the *Files* subheading.
+    2. Extract the archive using *Archive Manager* or any one of the following commands -  
     `unzip apache-maven-3.3.3-bin.zip` or `tar xzvf apache-maven-3.3.3-bin.tar.gz` (for Maven 3.3.3)
-3. Now open up the file `.profile` in your home directory for editing -  
+    3. Now open up the file `.profile` in your home directory for editing -  
     `sudo vi ~/.profile`
-4. Append the following line to add the *bin* directory of your Maven folder to the *PATH* environment variable  
+    4. Append the following line to add the *bin* directory of your Maven folder to the *PATH* environment variable  
     `PATH=$PATH:/path/to/apache-maven-3.3.3/bin`
-5. Logout of your user session and login again to reflect the changes. Enter `mvn --version` to see if Maven has been installed correctly. Your output should look similar to
+    5. Logout of your user session and login again to reflect the changes. Enter `mvn --version` to see if Maven has been installed correctly. Your output should look similar to
 ```
     Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T17:27:37+05:30)  
     Maven home: /path/to/apache-maven-3.3.3  
@@ -91,7 +92,14 @@ For more detailed and graphical installation instructions, visit http://www.wiki
     Java home: /usr/lib/jvm/java-8-oracle/jre  
     Default locale: en_IN, platform encoding: UTF-8  
     OS name: "linux", version: "3.13.0-37-generic", arch: "amd64", family: "unix"
-```
+```  
+
+  * Integration with Eclipse (Recommended)
+    1. In Eclipse, go to *Help* -> *Install New Software...*.
+    2. In the *Work with* textbox, paste `http://download.eclipse.org/technology/m2e/releases`.
+    3. After some time, *Maven Integration for Eclipse* will show up in the available packages. Check it and click *Next* -> *Next* -> Agree to the license terms -> *Finish*. you will be prompted to restart Eclipse after the installation finishes.
+
+    **NOTE**: If installing Maven as a stand alone application, project building and running will take place from the command line interface. If integrated with Eclipse, you can run your projects from within it.
 
 ### 7. NodeJS
 Open up the terminal and execute the following command:
