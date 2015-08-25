@@ -16,9 +16,9 @@ DO NOT INCLUDE THE FEATURES OF PAYPAL INC. , THEY ARE NOT A PART OF EBAY ANYMORE
 ->Please do not search for "eBay use case" or "eBay class diagram" on google and blindly copy it. 
 
 ->You are are free to use any software you want to draw the UML diagrams, 
-  but the final diagram should be saved a PNG or a JPEG file
+  but the final diagram should be saved as a PNG or a JPEG file
 
-->Start working ASAP, Dont postpone your work to the final week. Good luck!
+->Start working ASAP, Dont postpone your work to the final week. 
 
 I will post regarding all the frameworks that are expected to be used in this project in the next few days. 
 Feel free to drop a mail if you have any queries. You will get a reply asap. Good luck!
