@@ -23,14 +23,18 @@ There are many chat applications/examples scattered over the Internet.
 the backend, the frontend and the "middle" part which glues the two together.
 The backend will be the core application logic, written as Java classes.  
 The frontend (JSP, Freemarker, etc) serve as a way to represent the result obtained from those classes.  
-The middle part (web frameworks such as Spring, Dropwizard) allow you to glue these two together  
-by providing flexible libraries for a RESTful web service.  
-This is close to what is known as an MVC (Model-View-Controller) model.
+The middle part (web frameworks such as Spring, Dropwizard) allows you to glue these two together  
+by providing flexible libraries for a RESTful web service. I believe using NodeJS can also be feasible.
+This is close to what is known as an MVC (Model-View-Controller) model (look it up).
+
+3. To get started to making a basic chat interface, go through Dropwizard/Spring Boot docs and
+get to know how to build a basic "hello world" type web application. Once you are comfortable with
+the web application framework, you will implement chat in the backend using WebSocket protocol.
 
 Tools required (for installation instructions, read https://github.com/Akamoha/OOP-Resources/blob/master/README.md) -
 
 1. Github -
-	I cannot stress enough that understing Git/Github and how it works will go a long way enhancing your productivity.
+	Understanding Git/Github and how it works will go a long way enhancing your productivity.
 	Lot of time gets wasted syncing the project when you email your code.
 	https://help.github.com/
 	Hands on tutorials - https://try.github.io/ or http://gitimmersion.com/
@@ -40,7 +44,7 @@ Tools required (for installation instructions, read https://github.com/Akamoha/O
 	http://nvie.com/posts/a-successful-git-branching-model/
 
 2. Maven (for project management)
-	Maven is a kind of dependency manager that takes care of importing and maintaing dependencies of libraries you will be using
+	Maven is a kind of dependency manager that takes care of importing and maintaining dependencies of libraries you will be using
 	http://maven.apache.org/guides/getting-started/index.html
 
 3. Dropwizard / Spring Boot (any one, web frameworks to make your life easier)
