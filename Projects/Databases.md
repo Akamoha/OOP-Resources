@@ -8,10 +8,10 @@ I am, however, assuming you know what a database is and when it will be needed. 
 
 #JDBC
 1. http://infolab.stanford.edu/~ullman/fcdb/oracle/or-jdbc.html (focus on explanations and the process outline)
-2. http://www.tutorialspoint.com/jdbc/ (understand what the code does )
+2. http://www.tutorialspoint.com/jdbc/ (understand what the code does )
 
 #H2
-3. http://www.claudiobernasconi.ch/2010/08/17/h2-embedded-java-db-getting-started/ (simple code to understand the basic idea)
+3. http://www.claudiobernasconi.ch/2010/08/17/h2-embedded-java-db-getting-started/ (simple code to understand the basic idea)
 4. http://www.javatips.net/blog/2014/07/h2-database-example
 
 H2 more or less follows the same sequence of steps as JDBC.
